@@ -2,7 +2,7 @@
 $(window).bind("load", function() {
 
     "use strict";
-    
+
     $(".spn_hol").fadeOut(1000);
 });
 
@@ -11,11 +11,11 @@ $(window).bind("load", function() {
 $(document).ready(function() {
 
     "use strict";
-    
+
     $(window).scroll(function() {
 
         "use strict";
-        
+
         if ($(window).scrollTop() > 0) {
             $(".navbar").css({
                 'margin-top': '0px',
@@ -23,7 +23,7 @@ $(document).ready(function() {
             });
             $(".navbar .navbar-brand").css({
                 'opacity': '1'
-                
+
             });
             $(".navbar").removeClass("center-nav");
             $(".navbar-nav>li>a").css({
@@ -45,11 +45,11 @@ $(document).ready(function() {
             });
             $(".navbar .navbar-brand").css({
                 'opacity': '0'
-                
+
             });
             $(".navbar").addClass("center-nav");
             $(".navbar-nav>li>a").css({
-                'padding-top': '30px'
+                'padding-top': '13px'
             });
             $(".navbar-brand img").css({
                 'height': '45px'
@@ -71,11 +71,11 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     "use strict";
-    
+
     $(".navbar-nav li a").click(function() {
 
         "use strict";
-        
+
         $(".navbar-nav li a").parent().removeClass("active");
         $(this).parent().addClass("active");
     });
@@ -88,15 +88,15 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     "use strict";
-    
+
     $(window).scroll(function() {
 
         "use strict";
-        
+
         $(".page").each(function() {
 
             "use strict";
-            
+
             var bb = $(this).attr("id");
             var hei = $(this).outerHeight();
             var grttop = $(this).offset().top - 70;
@@ -115,7 +115,7 @@ $(document).ready(function() {
 
 
 $(function() {
-	
+
 	"use strict";
 
   $('a[href*=#]:not([href=#])').click(function() {
@@ -138,11 +138,11 @@ $(function() {
 $(document).ready(function() {
 
     "use strict";
-    
+
     setInterval(function() {
 
         "use strict";
-        
+
         var widnowHeight = $(window).height();
         var containerHeight = $(".home-container").height();
         var padTop = widnowHeight - containerHeight;
@@ -159,7 +159,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     "use strict";
-    
+
     $(window).bind('load', function() {
         "use strict";
         parallaxInit();
@@ -168,7 +168,7 @@ $(document).ready(function() {
     function parallaxInit() {
         "use strict";
         $('.home-parallax').parallax("30%", 0.1);
-        $('.subscribe-parallax').parallax("30%", 0.1);
+        
         $('.testimonial').parallax("10%", 1);
         /*add as necessary*/
     }
@@ -180,7 +180,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     "use strict";
-    
+
     $("#owl-demo").owlCarousel({
         autoPlay: 3000,
         items: 4, //10 items above 1000px browser width
@@ -191,7 +191,7 @@ $(document).ready(function() {
 });
 
 
-    
+
  //PRETTYPHOTO
 
 $(document).ready(function() {
@@ -210,7 +210,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     "use strict";
- 
+
     new WOW().init();
 });
 
@@ -220,7 +220,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     "use strict";
-    
+
     // Basic FitVids Test
     $(".video").fitVids();
 });
@@ -235,11 +235,11 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     "use strict";
-    
+
     $(".form_submit").click(function() {
 
         "use strict";
-        
+
         var name = $("#name").val();
         var emaild = $("#email").val();
         var phone = $("#phone").val();
@@ -306,13 +306,13 @@ $(document).ready(function() {
 });
 
 
- 
-/// SMOOTH SCROLL           
+
+/// SMOOTH SCROLL
 
 $(document).ready(function() {
 
     "use strict";
-    
+
     var scrollAnimationTime = 1200,
         scrollAnimation = 'easeInOutExpo';
     $('a.scrollto').bind('click.smoothscroll', function(event) {
@@ -329,21 +329,4 @@ $(document).ready(function() {
         delay: 10,
         time: 2000
     });
-});
-
-
-
-
-
-
-//VIDEO BACKGROUND
-$(document).ready(function() {
-  var videobackground = new $.backgroundVideo($('body'), {
-    "align": "centerXY",
-    "width": 1280,
-    "height": 720,
-    "path": "media/",
-    "filename": "cloud",
-    "types": ["mp4","ogg","webm"]
-  });
 });
